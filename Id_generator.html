@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID card Generator</title>
+    <link rel="stylesheet" href="id.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>ID Card Generator</h2>
+        <form>
+            <h3>Enter Students Details</h3>
+            <div class="user"><label>Enter Name:</label>
+            <input type="text" id="inName"><i class="fa fa-user fa-lg"></i>
+            </div>
+            <div class="col">
+                <label>Enter College Name:</label>
+                <input type="text" id="inCollege"><i class="fa fa-university"></i>
+            </div>
+            <div class="lo">
+                <label>Enter Location:</label>
+                <input type="text" id="inLocation"><i class="fa fa-address-book"></i>
+            </div>
+
+            <label for="file" class="upload">Enter Student's Picture</label>
+            <br>
+            <input type="file" id="file" accept="image/*" onchange="loadImage(event)">
+            <img src="" id="file" width="80px" height="80"><br>
+        </form>
+        
+        <div class="container1">
+            <h4>Generated ID Card</h4>
+            <canvas class="card" id="result">
+                <div class="content">
+                    <img src="" id="imgDisplayed">
+                    <ul>
+                        <li id="name">Name:</li>
+                        <li id="college">College:</li>
+                        <li id="location">Location:</li>
+                    </ul>
+                </div>
+            </canvas>
+            <table>
+                <tr><td><button type="submit" id="preview">Generate Card</button></td></tr>
+            </table>
+        </div>
+        
+    </div>
+
+    <script src="id.js"></script>
+</body>
+
+</html>

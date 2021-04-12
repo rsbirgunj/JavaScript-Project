@@ -1,0 +1,144 @@
+body{
+    font: 20px Helvetica,Arial;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h3{
+    color: #159;
+}
+.container h2{
+    font-family: 'Baloo 2', cursive;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color:#4047F0;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin-left: 15%;
+    border:2px solid rgb(173, 169, 169);
+    border-radius: 10px;
+    width: 67%;
+    height: 600px;
+    margin-top:5%;
+}
+
+form{
+    font-family: 'Baloo 2', cursive;
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+
+.container1{
+    width: 40%;
+    float: left;
+    margin-top: 3em;
+    color:#000;
+    text-align: center;
+}
+
+input{
+    display: table;
+    margin-bottom: 1em;
+    width: 60%;
+    font-size: 16px;
+    border: 2px solid #159;
+    border-radius: 5px;
+    padding: 3px;
+  }
+
+#result{
+    position: relative;
+    width: 100%;
+    margin-top:20;
+    margin-left: 15%;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    margin-bottom: 2em;
+}
+
+.content{
+    width: 80%;
+  }
+
+.content::after{
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.content img{
+    float: left;
+    width: 80px;
+    height: 105px;
+    margin-left: 15px;
+    margin-top: 0px; 
+    /* background : linear-gradient(to top, #4047F0, #8f94fb); */
+}
+.content ul{
+    width: 50%;
+    float: left;
+    padding-left: 15px;
+}
+.content ul li{
+    list-style-type: none;
+}
+
+button{
+    background-color: #4047F0;
+    border: none;
+    border-radius:5px;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 70px;
+    cursor: pointer;
+}
+
+/*  */
+
+form span{
+    font-size: 12px;
+}
+
+input[type=text]{ 
+        width: 80%; 
+        padding: 6px 20px; 
+        margin: 8px 0; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+
+.user i{
+    position: absolute;
+    left: 22%;
+    top: 34%;
+    color: black;
+    }
+
+.col i{
+    position: absolute;
+    left: 22%;
+    top: 45%;
+    color: black;
+}
+
+.lo i{
+    position: absolute;
+    left: 22%;
+    top: 56%;
+    color: black;
+}
+/* #imgDisplayed{
+    background-image: linear-gradient(to top, #4047F0, #8f94fb);
+} */
